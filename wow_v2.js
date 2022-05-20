@@ -200,10 +200,7 @@
                 Price: cost
             },
             type: "POST",
-            cache: !1,
-            success: function(t) {
-                console.clear()
-            }
+            cache: !1
         })
     }), n.on("submit", function(t) {
         t.preventDefault(), name = $("#name").val(), email = $("#email").val(), phoneNo = $("#phone").val(), message = $("#message").val(), reCaptcha = $("#img-captcha").val(), name && email && phoneNo && reCaptcha && jQuery.ajax({
@@ -217,9 +214,6 @@
                 Phone: phoneNo,
                 Message: message,
                 Location: loc
-            },
-            success: function(t) {
-                console.clear()
             }
         })
     });
@@ -230,7 +224,7 @@
             n = e + $(window).height(),
             i = t.offset().top - 100,
             o = i + t.height();
-        console.clear(), console.log(o <= n), console.log(i >= e), o <= n && i >= e && function(t) {
+        o <= n && i >= e && function(t) {
             t.hasClass("ms-animated") || (t.addClass("ms-animated"), t.prop("counter", 0).animate({
                 Counter: t.data("max")
             }, {
@@ -256,10 +250,7 @@
                 Location: loc
             },
             type: "POST",
-            cache: !1,
-            success: function(t) {
-                $("#modalError").html(t), "Submited" == t && console.clear()
-            }
+            cache: !1
         })
     }), $(window).on("scroll", () => {
         i.each(function() {
