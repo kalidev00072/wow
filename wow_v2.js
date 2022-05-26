@@ -567,6 +567,7 @@ $(function () {
                 Time: today,
                 Name: name2,
                 Email: email2,
+                Form_Type: type,
                 Location: loc
             },
             type: "POST",
