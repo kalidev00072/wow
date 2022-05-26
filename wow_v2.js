@@ -565,9 +565,8 @@ $(function () {
             url: "https://script.google.com/macros/s/AKfycbxE0b69Wpuf8ghuixv1j4SwIW6PoGKeQDhqo6-kP-R-sDeMsG49SC3I9D0IWYAONNZiDQ/exec",
             data: {
                 Time: today,
-                Name: name,
-                Email: email,
-                Form_Type: type,
+                Name: name2,
+                Email: email2,
                 Location: loc
             },
             type: "POST",
